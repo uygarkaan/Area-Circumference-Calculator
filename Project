@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class areacircumferencecalculator {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int r;  // Variable to store the radius
+        double pi = 3.14;  // Approximate value of Pi
+
+        // Prompt the user to enter the radius
+        System.out.println("Enter the radius: ");
+        r = scanner.nextInt();
+
+        // Calculate the area of the circle
+        double area = (pi * r * r);
+
+        // Calculate the circumference of the circle
+        double circumference = (2 * pi * r);
+
+        // Print the area and circumference
+        System.out.println("Area: " + area);
+        System.out.println("Circumference: " + circumference);
+
+        /*
+         * Write a program that finds the area of a sector with a radius r and a central angle 𝛼.
+         * Take the value of 𝜋 as 3.14.
+         * Formula: (𝜋 * (r * r) * 𝛼) / 360
+         */
+
+        // Example calculation with an arbitrary angle (𝛼) stored in the variable 'area'
+        // Calculate the area of the sector based on the given formula
+        double sectorArea = pi * (r * r) * area / 360;
+
+        // Print the sector area
+        System.out.println("Sector area: " + sectorArea);
+
+        scanner.close();
+    }
+}
