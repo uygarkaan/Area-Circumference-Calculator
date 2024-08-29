@@ -3,6 +3,11 @@ import java.util.Scanner;
 public class areacircumferencecalculator {
     public static void main(String[] args) {
 
+         /**
+         * This GPA calculator was created by @uygarkaan.
+         * You can find more projects and tutorials at https://github.com/uygarkaan
+         */
+
         Scanner scanner = new Scanner(System.in);
 
         int r;  // Variable to store the radius
